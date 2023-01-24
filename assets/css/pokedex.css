@@ -1,0 +1,68 @@
+
+.pokemons{
+   padding: 0;
+    list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+@media screen and (min-width: 350px){
+   .pokemons{
+      grid-template-columns: 1fr 1fr;
+   }
+}
+@media screen and (min-width: 576px){
+   .pokemons{
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+@media screen and (min-width: 992px){
+.pokemons{
+   grid-template-columns: 1fr  1fr 1fr 1fr;
+}
+}
+.pokemon {
+   margin: 0.5rem;  
+   padding: 1rem;
+   background-color: #66EECE;
+   color: white;
+   border-radius: 2rem;
+   display: flex;
+   flex-direction: column;
+}
+.pokemon .number {
+   color: #0A5C15;
+   text-align: right;
+   opacity: 0.6;
+   font-size: .625rem;
+}
+.pokemon .name{
+   margin-bottom: 0rem;
+}
+
+.pokemon .datail{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.pokemon .datail .types {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   
+}
+.pokemon .datail .types .type{
+   background-color: #61e2cb;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.625rem;
+    margin: 0.25rem 0;
+}
+.pokemon .datail img{
+   width: 80px;
+   max-width: 100%;
+   align-self: flex-end;
+}
+
