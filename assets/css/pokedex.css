@@ -4,9 +4,9 @@
     list-style: none;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
 }
-@media screen and (min-width: 350px){
+@media screen and (min-width: 380px){
    .pokemons{
       grid-template-columns: 1fr 1fr;
    }
@@ -17,19 +17,22 @@
    }
 }
 @media screen and (min-width: 992px){
-.pokemons{
+   .pokemons{
    grid-template-columns: 1fr  1fr 1fr 1fr;
 }
+
+
+
 }
 .pokemon {
-   margin: 0.5rem;  
-   padding: 1rem;
-   background-color: #66EECE;
-   color: white;
-   border-radius: 2rem;
    display: flex;
    flex-direction: column;
+   margin: .5rem;
+   padding: 1rem;
+   border-radius: 1rem;
+   background-color: #4ad1b1;
 }
+   
 .pokemon .number {
    color: #0A5C15;
    text-align: right;
@@ -38,6 +41,7 @@
 }
 .pokemon .name{
    margin-bottom: 0rem;
+   color: azure;
 }
 
 .pokemon .datail{
@@ -51,10 +55,11 @@
    list-style: none;
    padding: 0;
    margin: 0;
+   color: azure;
    
 }
 .pokemon .datail .types .type{
-   background-color: #61e2cb;
+   background-color: #61e2cd;
     border-radius: 1rem;
     padding: 0.25rem 0.5rem;
     font-size: 0.625rem;
